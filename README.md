@@ -13,46 +13,47 @@ https://hub.docker.com/repository/docker/muskansharmadocker/dockers/general
 **Also, Here are the commands that have been used:**
 
 
+Pull the Docker image
 
--> Pull the Docker image
-   **docker pull nginx:latest**
-
-
--> Verify that the NGINX image was pulled successfully
-
-   **docker images**
+	docker pull nginx:latest
 
 
--> Create the Dockerfile and Index.HTML
+Verify that the NGINX image was pulled successfully
+
+   	docker images
 
 
--> Build the image
-
-   **docker build -t <new_image_name> .**  #make sure to add a dot at the end
+Create the Dockerfile and Index.HTML
 
 
--> Verify that the image was built using command - docker images
+Build the image
+
+	docker build -t <new_image_name> .**  #make sure to add a dot at the end
 
 
--> Build and deploy the container
-
-   **docker run -d --name <name-container> -p 8080:80 <new_image_name>**
+Verify that the image was built using command - docker images
 
 
--> Check the newly created container 
+Build and deploy the container
+
+	docker run -d --name <name-container> -p 8080:80 <new_image_name>
+
+
+Check the newly created container 
    
-   **docker ps -a**
+   	docker ps -a
 
 
--> Verify that the container is running ( I was able to access the app in my localhost environment on port 8080 ) 	
+Verify that the container is running ( I was able to access the app in my localhost environment on port 8080 ) 	
 
-   **http://localhost:8080/**
+   	http://localhost:8080/
 
 
 **Follow the below steps to push it to the Docker registry:**
 
 
 -> Login to Docker: 
+
    **docker login -u <docker username>** 
 
 
