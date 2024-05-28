@@ -54,7 +54,7 @@ Verify that the container is running ( I was able to access the app in my localh
 
 -> Login to Docker: 
 
-   **docker login -u <docker username>** 
+   	docker login -u <docker username>
 
 
 -> Create a Repository in Docker
@@ -62,12 +62,12 @@ Verify that the container is running ( I was able to access the app in my localh
 
 -> Commit the image :
 
-   **docker commit <container id> <dockerhub username/docker hub repo name:tag name>**
+   	docker commit <container id> <dockerhub username/docker hub repo name:tag name>
 
 
 -> Push the Image to Dockerhub:
 
-   **docker push dockerhub username/dockerhub repo:tagname**
+   	docker push dockerhub username/dockerhub repo:tagname
 
 
 	
